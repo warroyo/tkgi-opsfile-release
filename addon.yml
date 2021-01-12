@@ -11,7 +11,7 @@ addons:
     - name: opsfiles-add
       release: tkgi-opsfiles
       properties:
-        ops-files: []
+        ops-file: ""
 
     include: 
       jobs:

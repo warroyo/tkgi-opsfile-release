@@ -8,7 +8,7 @@ templates:
 packages: []
 
 properties:
-  opsfile.content:
+  ops-file.content:
     description: the yaml content of the opsfile
     default: ""
     example: |
