@@ -9,7 +9,7 @@ addons:
   - name: tkgi-opsfiles
     jobs:
     - name: opsfiles-add
-      release: cluster-override
+      release: tkgi-opsfiles
       properties:
         ops-files: []
 
