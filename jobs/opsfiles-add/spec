@@ -1,0 +1,19 @@
+  
+---
+name: opsfiles-add
+
+templates:
+  tkgi-override-opsfile.erb: config/tkgi-override-opsfile.yml
+
+packages: []
+
+properties:
+  opsfile.content:
+    description: the yaml content of the opsfile
+    default: ""
+    example: |
+      ---
+      - type: replace
+        path: /update/vm_strategy?
+        value: create-swap-delete
+

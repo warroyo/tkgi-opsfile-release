@@ -1,0 +1,28 @@
+---
+name: tkgi-opsfiles
+
+releases:
+- name: tkgi-opsfiles
+  version: 0+dev.1
+
+addons:
+  - name: tkgi-opsfiles
+    jobs:
+    - name: opsfiles-add
+      release: cluster-override
+      properties:
+        ops-file:
+          content: |
+            ---
+            - type: replace
+              path: /update/vm_strategy?
+              value: create-swap-delete
+
+
+    include: 
+      jobs:
+      - name: pks-api
+        release: pks-api
+
+      stemcell:
+      - os: ubuntu-xenial
