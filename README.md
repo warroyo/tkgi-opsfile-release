@@ -27,7 +27,7 @@ bosh upload-release ./dev_releases/os-conf/os-conf-21.0.0+dev.1.yml
 ```
 4. Configure the addon from this repo
 ```
-cd ..
+
 bosh -n update-config --name=tkgi-opsfile --type=runtime ./addon.yml
 ```
 
