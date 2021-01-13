@@ -28,7 +28,7 @@ bosh upload-release ./dev_releases/tkgi-opsfiles/tkgi-opsfiles-0+dev.1.yml
 4. Configure the addon from this repo
 ```
 
-bosh -n update-config --name=tkgi-opsfile --type=runtime ./addon.yml
+bosh -n update-config --name=tkgi-opsfile --type=runtime ./addon-vmstrategy-example.yml
 ```
 
 1. modify the TKGI tile metadata to include the new file. run the below from the opsman vm.
