@@ -34,7 +34,7 @@ bosh -n update-config --name=tkgi-opsfile --type=runtime ./addon-vmstrategy-exam
 1. modify the TKGI tile metadata to include the new file. run the below from the opsman vm.
 
 ```
-./update-tile.sh
+sudo ./update-tile.sh
 ```
 
 7. apply changes in opsman
