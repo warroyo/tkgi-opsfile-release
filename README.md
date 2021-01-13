@@ -22,7 +22,7 @@ export BOSH_CLIENT=ops_manager BOSH_CLIENT_SECRET=fakesecret BOSH_CA_CERT=/var/t
 ```
 git clone https://github.com/warroyo/tkgi-opsfile-release && cd tkgi-opsfile-release
 bosh create-release --force
-bosh upload-release ./dev_releases/os-conf/os-conf-21.0.0+dev.1.yml
+bosh upload-release ./dev_releases/tkgi-opsfiles/tkgi-opsfiles-0+dev.1.yml
 
 ```
 4. Configure the addon from this repo
